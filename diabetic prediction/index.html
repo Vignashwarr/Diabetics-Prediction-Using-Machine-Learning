@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center text-center mt-5">
+            <div class="col-lg-6">
+                <img src="diabetes.jpeg" alt="Diabetes" class="img-fluid" id="diabetes-img">
+                <h1 class="text-center mt-4">Diabetes Prediction</h1>
+                <p class="lead text-muted">Use this tool to predict if you are at risk of diabetes. Enter the details below.</p>
+            </div>
+        </div>
+
+        <form id="diabetesForm" class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="pregnancies">Number of Pregnancies:</label>
+                        <input type="number" class="form-control" id="pregnancies" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="glucose">Glucose Level:</label>
+                        <input type="number" class="form-control" id="glucose" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bloodPressure">Blood Pressure:</label>
+                        <input type="number" class="form-control" id="bloodPressure" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="skinThickness">Skin Thickness:</label>
+                        <input type="number" class="form-control" id="skinThickness" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="insulin">Insulin Level:</label>
+                        <input type="number" class="form-control" id="insulin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bmi">BMI:</label>
+                        <input type="number" class="form-control" id="bmi" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dpf">Diabetes Pedigree Function:</label>
+                        <input type="number" class="form-control" id="dpf" step="0.001" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" required>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg mt-3" id="submit-btn">Predict</button>
+            </div>
+        </form>
+
+        <div class="result mt-5" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

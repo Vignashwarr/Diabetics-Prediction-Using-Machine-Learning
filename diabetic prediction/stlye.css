@@ -1,0 +1,54 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+}
+
+#diabetes-img {
+    width: 150px;
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.form-control {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+button {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-header {
+    background-color: #28a745;
+    color: white;
+}
+
+.precautions, .recommended-foods {
+    list-style-type: none;
+    padding-left: 0;
+}
